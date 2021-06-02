@@ -6,10 +6,12 @@ services:
   builder:
     build: builder
     volumes:
-      - "data-vol:/opt/boxfuse/target"
+      - "data-vol:/opt/boxfuse/targets"
 
   tomcat:
     build: service
+    depends_on:
+      - builder
     ports: 
       - "8080:8080"
     volumes:

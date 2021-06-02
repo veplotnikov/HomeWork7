@@ -1,7 +1,6 @@
 version: '3'
 volumes:
   data-vol:
-    external: true
 
 services:
   builder:

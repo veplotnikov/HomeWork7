@@ -5,8 +5,7 @@ services:
     
     volumes:
       - data:/opt
-    volumes_from:
-      - php
+      
   tomcat:
     build: service
     ports: 

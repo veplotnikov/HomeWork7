@@ -1,6 +1,8 @@
 version: '3'
 volumes:
   data-vol:
+    name: my-test-volume
+    
 
 services:
   builder:

@@ -6,7 +6,7 @@ services:
   builder:
     build: builder
     volumes:
-      - "data-vol:/opt/boxfuse"
+      - "data-vol:/opt/tomcat/latest/webapps"
 
   tomcat:
     build: service
@@ -15,4 +15,4 @@ services:
     ports: 
       - "8080:8080"
     volumes:
-      - "data-vol:/opt/test"
+      - "data-vol:/opt/tomcat/apache-tomcat-9.0.46/webapps"

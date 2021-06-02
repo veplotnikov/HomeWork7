@@ -8,7 +8,7 @@ RUN apt-get update && \
     tar -xf /tmp/apache-tomcat-9.0.46.tar.gz -C /opt/tomcat/ && \
     ln -s /opt/tomcat/apache-tomcat-9.0.46 /opt/tomcat/latest && \
     sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh' ## && \
-##    cp /opt/boxfuse/target/hello-1.0.war /opt/tomcat/latest/webapps/
+    cp /opt/test/boxfuse/target/hello-1.0.war /opt/tomcat/latest/webapps/
 EXPOSE 8080 
 
 CMD ["/opt/tomcat/latest/bin/catalina.sh", "run"]

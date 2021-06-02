@@ -1,15 +1,15 @@
-version: '3'
+version: '2.4'
 services:
   builder:
     build: builder
     volumes:
-      - "data:/opt"
+      - data-vol:/opt
 
   tomcat:
     build: service
     ports: 
       - "8080:8080"
     volumes:
-      - "data:/opt"
+      - data-vol:/opt
 volumes:
-  data:
+  data-vol:

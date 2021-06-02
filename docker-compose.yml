@@ -6,7 +6,7 @@ services:
   builder:
     build: builder
     volumes:
-      - "data-vol:/opt/boxfuse/targets"
+      - "data-vol:/opt/boxfuse"
 
   tomcat:
     build: service

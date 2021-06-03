@@ -1,7 +1,7 @@
 FROM alpine:latest
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && \
-    apt-get install default-jdk wget -y && \
+RUN apt update && \
+    apt install default-jdk wget -y && \
     mkdir /opt/tomcat &&  \
     mkdir /opt/test && \
     wget https://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.46/bin/apache-tomcat-9.0.46.tar.gz -P /tmp && \

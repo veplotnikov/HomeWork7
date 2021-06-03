@@ -15,4 +15,5 @@ services:
     ports: 
       - "8080:8080"
     volumes:
-      - "data-vol:/opt/tomcat/apache-tomcat-9.0.46/webapps"
+       - "datavol:/opt/tomcat/webapps/"
+#      - "data-vol:/opt/tomcat/apache-tomcat-9.0.46/webapps"
